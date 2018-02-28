@@ -1,0 +1,209 @@
+2018-02-09 21:29:58 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: azcrawl)
+2018-02-09 21:29:58 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.3.1, w3lib 1.18.0, Twisted 17.9.0, Python 3.6.3 |Anaconda, Inc.| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.2.0 (OpenSSL 1.0.2l  25 May 2017), cryptography 2.0.3, Platform Windows-8.1-6.3.9600-SP0
+2018-02-09 21:29:58 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'BOT_NAME': 'azcrawl', 'CONCURRENT_REQUESTS': 4, 'CONCURRENT_REQUESTS_PER_DOMAIN': 4, 'DOWNLOAD_DELAY': 0.25, 'FEED_FORMAT': 'json', 'FEED_URI': 'ids.json', 'LOG_FILE': 'Logs/log_file9_2_201821_29.log', 'LOG_STDOUT': True, 'NEWSPIDER_MODULE': 'azcrawl.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['azcrawl.spiders']}
+2018-02-09 21:29:58 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-02-09 21:29:58 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'azcrawl.middlewares.AzcrawlDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-02-09 21:29:58 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'azcrawl.middlewares.AzcrawlSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-02-09 21:29:58 [scrapy.middleware] INFO: Enabled item pipelines:
+['azcrawl.pipelines.AzcrawlPipeline']
+2018-02-09 21:29:58 [scrapy.core.engine] INFO: Spider opened
+2018-02-09 21:29:58 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-02-09 21:29:58 [fetch_ids] INFO: Spider opened: fetch_ids
+2018-02-09 21:29:58 [fetch_ids] INFO: Spider opened: fetch_ids
+2018-02-09 21:29:58 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-02-09 21:29:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/robots.txt> (referer: None)
+2018-02-09 21:30:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/gp/search/other/ref=lp_1389401031_sa_p_89?rh=n%3A976419031%2Cn%3A%21976420031%2Cn%3A1389401031&bbn=1389401031&pickerToList=lbr_brands_browse-bin&ie=UTF8&qid=1515690014> (referer: None)
+2018-02-09 21:30:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor> (referer: https://www.amazon.in/gp/search/other/ref=lp_1389401031_sa_p_89?rh=n%3A976419031%2Cn%3A%21976420031%2Cn%3A1389401031&bbn=1389401031&pickerToList=lbr_brands_browse-bin&ie=UTF8&qid=1515690014)
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B074XG9P5L', 'product_name': 'BlueArmor Moto G5s Plus Tempered Glass - Clear'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B06WLHP5KQ', 'product_name': 'BlueArmor Soft Silicone Back Cover Case For Huawei Honor 6x - Transparent & Mobile Stand'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0793SRM9C', 'product_name': 'BlueArmor Tempered Glass Screen Guard Protector for Samsung Galaxy A8 Plus - Black'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01LWBUYJF', 'product_name': 'BlueArmor HD Clear Tempered Glass Screen Guard Protector for Lenovo Yoga Tab 3 8.0 Tablet ( 8 inch )'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B074N8G61L', 'product_name': 'BlueArmor BlackBerry KeyOne Back Cover [For New Release BlackBerry KeyOne Special Edition] Shock Proof Case Premium Quality (Pure Black)'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B074N6BSWX', 'product_name': 'BlueArmor Armor Shock Proof Brushed Back Cover Case For LG Q6 (Black)'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01I74DJ2G', 'product_name': 'BlueArmor HD Clear Tempered Glass Screen Guard Protector for Sony Xperia XA Dual'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0794XRBTK', 'product_name': 'BlueArmor Shockproof Back Case Cover for Samsung Galaxy A8 Plus/ A8+ (Metallic Blue)'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0794ZQZ8V', 'product_name': 'BlueArmor Shockproof Back Case Cover for Samsung Galaxy A8 Plus/ A8+ (Jet Black)'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01LZDNJBG', 'product_name': 'BlueArmor 2.5D Curved Tempered Glass Screen Guard Protector for Motorola Moto Z Play / Moto Z2 Play Tempered Glass / Moto Z2 Play Glass'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B079CGTSDM', 'product_name': 'BlueArmor Shockproof Back Case Cover for Honor 9 lite (Metallic Blue)'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0799L2XVH', 'product_name': 'BlueArmor Tempered Glass Screen Guard Protector for Honor 9 Lite - Blue'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0799K2HP6', 'product_name': 'BlueArmor Tempered Glass Screen Guard Protector for Honor 9 Lite - Black'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B075NFPBG8', 'product_name': 'BlueArmor Apple Iphone 8 Plus Tempered Glass Screen Guard Protector - Clear\x7f'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B073TZKH5Q', 'product_name': 'BlueArmor OnePlus 5 Back Cover Armor Shock Proof One Plus 5 Back Cover Case Premium Quality with Logo Cut (Pure Black)'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0769FD1QR', 'product_name': 'BlueArmor Honor 9i Tempered Glass Screen Guard Protector (White)'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B074SXR5V8', 'product_name': 'Bluearmor Tempered Glass For Lenovo K8 Note'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B075DTSH81', 'product_name': 'BlueArmor [Edge to Edge] Xiaomi Mi A1 Tempered Glass [Full Coverage][For New Release Xiaomi Mi Android One] Screen Guard Protector - Black'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B079CGTVL1', 'product_name': 'BlueArmor Shockproof Back Case Cover for Honor 9 lite (Jet Black)'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B075NGNNHC', 'product_name': 'BlueArmor Apple Iphone 8 Tempered Glass Screen Guard Protector (Clear Front)'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B018NURQZ0', 'product_name': 'BlueArmor HD Clear Tempered Glass Screen Guard Protector for LG V10 & Solitaire Crystals Touch Stylus'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B07953V7RT', 'product_name': 'BlueArmor Lava Red Border Back Cover Case for OnePlus 5T (Lava Red)'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01285JJE2', 'product_name': 'BlueArmor HD Clear Tempered Glass Screen Guard Protector for Yu Yureka Plus (Pack of One)'}
+2018-02-09 21:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B075XL7Z1M', 'product_name': 'BlueArmor Iphone X Tempered Glass Screen Guard Protector - Clear'}
+2018-02-09 21:30:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor> from <GET https://www.amazon.in/s/ref=sr_pg_2?fst=as%3Aoff&rh=n%3A976419031%2Cn%3A%21976420031%2Cn%3A1389401031%2Cp_89%3ABlueArmor&page=3>
+2018-02-09 21:30:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor> from <GET https://www.amazon.in/s/ref=sr_pg_2?fst=as%3Aoff&rh=n%3A976419031%2Cn%3A%21976420031%2Cn%3A1389401031%2Cp_89%3ABlueArmor&page=2>
+2018-02-09 21:30:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor> (referer: https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor)
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01BK82OCC', 'product_name': 'BlueArmor Soft Back Cover Case for Coolpad Note 3 Lite Design 14'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01AZDRUSG', 'product_name': 'BlueArmor Sparkling Soft Cover Case for Asus Zenfone Max ZC550KL Design 7'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B076BRBZV5', 'product_name': 'BlueArmor Apple Iphone 8 Tempered Glass Screen Guard Protector (Privacy)'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B075RC7L44', 'product_name': 'BlueArmor Samsung Galaxy Note 8 Tempered Glass 3D Curved Edges Premium Quality Screen Guard Protector [ For August 2017 Release Samsung Galaxy Note 8 ] - Gold'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B072QF3WYX', 'product_name': 'BlueArmor Soft Back Cover Case For Moto C Design 9'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B07212B7G6', 'product_name': 'BlueArmor Soft Back Cover Case For Moto C Design 8'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B07212B3VM', 'product_name': 'BlueArmor Soft Back Cover Case For Moto C Design 1'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B072129874', 'product_name': 'BlueArmor Soft Back Cover Case For Moto C Design 11'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01J82E48Y', 'product_name': 'BlueArmor Soft Back Cover Case For Micromax Canvas Unite 4 Pro Q465 Design 25'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01H1VJSLM', 'product_name': 'BlueArmor Soft Back Cover Case For LeTv LeEco Le Max2 Design 5'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01GHSYDM4', 'product_name': 'BlueArmor Soft Back Cover Case For Intex Aqua Craze Design 54'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01GHSXMDU', 'product_name': 'BlueArmor Soft Back Cover Case For Vivo Y21 Design 13'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01G1T4LSA', 'product_name': 'BlueArmor Back Soft Cover Case for Reliance Jio Lyf Water 5 Design 13'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01D9SVN78', 'product_name': 'BlueArmor Sparkling Soft Back Cover Case for Xolo Era X Design 78'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01C797ASG', 'product_name': 'BlueArmor Back Soft Cover Case for Honor Holly 2 Plus Design 28'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01BYGRE3Y', 'product_name': 'BlueArmor Soft Back Bumper Cover Case for Honor Holly 2 Plus- Design 4'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01BSL4CXA', 'product_name': 'BlueArmor Sparkling Soft Back Cover Case For Panasonic Eluga Turbo Design 47'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01AYBUE0U', 'product_name': 'BlueArmor Sparkling Soft Back Cover Case For Lava Iris Atom 3 Design 19'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01AYBU6XU', 'product_name': 'BlueArmor Sparkling Soft Back Cover Case For Lava Iris Atom 3 Design 35'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01ALWJXGI', 'product_name': 'BlueArmor Sparkling Soft Back Cover Case For Microsoft Lumia 550 Design 35'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01A7KJD2I', 'product_name': 'BlueArmor Sparkling Soft Cover Case for Gionee S Plus Gionee S+ Design 51'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B019RVXK7W', 'product_name': 'BlueArmor Sparkling Soft Cover Case for Acer Liquid Z630S Design 75'}
+2018-02-09 21:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=3&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B019RVX9XW', 'product_name': 'BlueArmor Sparkling Soft Cover Case for Acer Liquid Z630S Design 93'}
+2018-02-09 21:30:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor> (referer: https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=1&rh=n%3A1389401031%2Cp_89%3ABlueArmor)
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B075Z3DX11', 'product_name': 'BlueArmor Apple Iphone 8 Tempered Glass Screen Guard Protector (Clear Back)'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0735K85CF', 'product_name': 'BlueArmor Soft Silicone OnePlus 5 Back Cover Case - Transparent & Mobile Stand'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0723CPMKY', 'product_name': 'BlueArmor Premium High Quality Luxury Flip Cover Case for Xiaomi Redmi 4 (Launched in May 2017) (Black Brown)'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B075VXNZV9', 'product_name': 'BlueArmor Moto X4 Tempered Glass [Covers Only Flat Part Of Screen due to Curved Edges of Phone] Screen Guard Protector - Clear'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0752TJJQQ', 'product_name': 'BlueArmor Samsung Galaxy Note 8 Tempered Glass 3D Curved Edges Premium Quality Screen Guard Protector [ For August 2017 Release Samsung Galaxy Note 8 ] - Clear'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01N1KI1EG', 'product_name': 'BlueArmor Premium HD Tempered Glass Screen Guard Protector for OnePlus 3T One Plus 3T'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01BSZGPSQ', 'product_name': 'BlueArmor Transparent Soft Back Cover Case for Reliance Jio Lyf Water 1 & Silicone Stand'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B07681B3WZ', 'product_name': 'BlueArmor Xiaomi Mi Mix 2 Tempered Glass Screen Guard Protector - Clear'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B06XRG2T78', 'product_name': 'BlueArmor Soft Silicone Case Cover for Xiaomi Redmi 4a ( Transparent )'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B073TZ86FQ', 'product_name': 'BlueArmor OnePlus 5 Back Cover Armor Shock Proof One Plus 5 Back Cover Case Premium Quality with Logo Cut (Steel Grey)'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0768B3LZ1', 'product_name': 'BlueArmor Nokia 8 Tempered Glass Screen Guard Protector (Black)'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0768G1MGN', 'product_name': 'BlueArmor Xiaomi Mi Mix 2 Tempered Glass Screen Guard Protector - Black'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B074SHFC14', 'product_name': 'BlueArmor Shock Proof Defender Hybrid Case For Lenovo K8 [For 18th August Release Lenovo K8 Note ](Pure Black)'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B0742H28K9', 'product_name': 'BlueArmor Infocus Turbo 5 Back Cover Textured Glossy Shock Proof Soft Case Premium Quality (Brown)'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B076BNB1D9', 'product_name': 'BlueArmor Apple Iphone 8 Tempered Glass Screen Guard Protector (Matte)'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01MT2B0JS', 'product_name': 'BlueArmor Premium Quality Tempered Glass Screen Guard Protector for Coolpad Note 3s'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01NCX5LV5', 'product_name': 'BlueArmor Soft Silicone Back Cover Case For Samsung Galaxy J2 Ace - Transparent & Mobile Stand'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B075DXNNGZ', 'product_name': 'BlueArmor [Edge to Edge] Xiaomi Mi A1 Tempered Glass[For New Release Xiaomi Mi Android One] Screen Guard Protector - White'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B072DS3PTV', 'product_name': 'BlueArmor 100% Coverage Edge to Edge Tempered Glass Screen Guard Protector for Samsung Galaxy C7 Pro -Black'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B074SK1784', 'product_name': 'BlueArmor Shock Proof Defender Hybrid Case For Lenovo K8 Note[For 18th August Release Lenovo K8 Note] (Blue)'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B074SJLSQ3', 'product_name': 'BlueArmor Shock Proof Defender Hybrid Case For Lenovo K8 Note [For 18th August Release Lenovo K8 Note ](Red)'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B072B6M31F', 'product_name': 'BlueArmor 100% Coverage Edge to Edge Tempered Glass Screen Guard Protector for Samsung Galaxy C7 Pro - Gold'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B01K7TIGHW', 'product_name': 'BlueArmor Leather Flip Cover Case for Xiaomi Redmi 3s Prime - Gold & Mobile Stand'}
+2018-02-09 21:30:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Mobiles-Accessories-BlueArmor-Electronics/s?ie=UTF8&page=2&rh=n%3A1389401031%2Cp_89%3ABlueArmor>
+{'product_id': 'B071W5RTW9', 'product_name': 'BlueArmor Soft Silicone Back Cover Case For Samsung Z4 - Transparent & Mobile Stand'}
+2018-02-09 21:30:15 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-02-09 21:30:15 [scrapy.extensions.feedexport] INFO: Stored json feed (71 items) in: ids.json
+2018-02-09 21:30:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2868,
+ 'downloader/request_count': 7,
+ 'downloader/request_method_count/GET': 7,
+ 'downloader/response_bytes': 229964,
+ 'downloader/response_count': 7,
+ 'downloader/response_status_count/200': 5,
+ 'downloader/response_status_count/301': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 2, 9, 16, 0, 15, 254346),
+ 'item_scraped_count': 71,
+ 'log_count/DEBUG': 79,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 2,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 6,
+ 'scheduler/dequeued/memory': 6,
+ 'scheduler/enqueued': 6,
+ 'scheduler/enqueued/memory': 6,
+ 'start_time': datetime.datetime(2018, 2, 9, 15, 59, 58, 678573)}
+2018-02-09 21:30:15 [scrapy.core.engine] INFO: Spider closed (finished)

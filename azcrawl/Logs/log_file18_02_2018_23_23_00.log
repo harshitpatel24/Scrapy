@@ -1,0 +1,2465 @@
+2018-02-18 23:23:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: azcrawl)
+2018-02-18 23:23:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.3.1, w3lib 1.18.0, Twisted 17.9.0, Python 3.6.3 |Anaconda, Inc.| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.2.0 (OpenSSL 1.0.2l  25 May 2017), cryptography 2.0.3, Platform Windows-8.1-6.3.9600-SP0
+2018-02-18 23:23:01 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'AUTOTHROTTLE_MAX_DELAY': 600, 'BOT_NAME': 'azcrawl', 'CONCURRENT_REQUESTS': 1, 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'CONCURRENT_REQUESTS_PER_IP': 1, 'DOWNLOAD_DELAY': 2, 'FEED_FORMAT': 'json', 'FEED_URI': 'iphone_8_reviews.json', 'LOG_FILE': 'Logs/log_file18_02_2018_23_23_00.log', 'LOG_STDOUT': True, 'NEWSPIDER_MODULE': 'azcrawl.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['azcrawl.spiders']}
+2018-02-18 23:23:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-02-18 23:23:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'azcrawl.middlewares.AzcrawlDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-02-18 23:23:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'azcrawl.middlewares.AzcrawlSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-02-18 23:23:01 [scrapy.middleware] INFO: Enabled item pipelines:
+['azcrawl.pipelines.AzcrawlPipeline']
+2018-02-18 23:23:01 [scrapy.core.engine] INFO: Spider opened
+2018-02-18 23:23:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-02-18 23:23:01 [fetch_reviews] INFO: Spider opened: fetch_reviews
+2018-02-18 23:23:01 [fetch_reviews] INFO: Spider opened: fetch_reviews
+2018-02-18 23:23:01 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-02-18 23:23:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.in/robots.txt> from <GET http://www.amazon.in/robots.txt>
+2018-02-18 23:23:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/robots.txt> (referer: None)
+2018-02-18 23:23:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.in/> from <GET http://www.amazon.in/>
+2018-02-18 23:23:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/> (referer: None)
+2018-02-18 23:23:15 [fetch_reviews] INFO: Start Crawling for single product given into program
+2018-02-18 23:23:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1> (referer: https://www.amazon.in/)
+2018-02-18 23:23:21 [fetch_reviews] INFO: Start Extracting Reviews
+2018-02-18 23:23:21 [fetch_reviews] INFO: last page number 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=2&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=3&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=4&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=5&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=6&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=7&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=8&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=9&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=10&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=11&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=12&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=13&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=14&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [fetch_reviews] INFO: Last Review page number: 15
+2018-02-18 23:23:21 [fetch_reviews] INFO: Url: ['https', 'www.amazon.in', '/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ', 'pageNumber=15&reviewerType=all_reviews&sortBy=recent', '']
+2018-02-18 23:23:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Nandakishor.U.M',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '17 February 2018',
+ 'review_id': 'RHSE8VVTUPD4W',
+ 'review_text': 'In top 3 most powerful phones till now, one of them is iPhone '
+                '8.\n'
+                'The battery seems fair with more than a day back-up..the '
+                'phone’s design is seeking some doubt on build-quality because '
+                'of its fine glass finishing. But if you have a good back '
+                'cover, No worries....\n'
+                'Camera(i have compared the quality with several dual cam '
+                'phones),dispaly and memory management is at its best for my '
+                'usage. Audio also looks good.\n'
+                'Since i have no wireless charger,no comments on that.\n'
+                'And you know, the phone’s cost, only if you are confident to '
+                'buy, go for it. Won’t dissatisfy you.\n'
+                'Loved the phone not by the brand, but by what it has...',
+ 'review_title': 'My opinion on a 50-60k handset, with a brand name-Apple',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'shanmugavel v pillai',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '17 February 2018',
+ 'review_id': 'R3V6YAY35VYSX4',
+ 'review_text': 'Hello,\n'
+                '  I getted to know about this phone that its features and '
+                'software is incredible. So I am writing this that I want a '
+                'free sample of this product to get to know about it and to '
+                'review it ..',
+ 'review_title': 'Provide with a sample for free',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Mohit Singh',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '16 February 2018',
+ 'review_id': 'R1ZU70I1KLI2LN',
+ 'review_text': 'Good device but I expected something more',
+ 'review_title': 'Four Stars',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Devyani T.',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '15 February 2018',
+ 'review_id': 'R19EQP5UI5AH27',
+ 'review_text': '❤️❤️❤️❤️❤️',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '14 February 2018',
+ 'review_id': 'R367MCX975SK6K',
+ 'review_text': '2 GB RAM !!!',
+ 'review_title': 'Worth less',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'mmmm',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '14 February 2018',
+ 'review_id': 'R1GT92IBYOABRK',
+ 'review_text': 'Waste of money',
+ 'review_title': 'Waste of money instead of this one should buy Google pixel 2 '
+                 'xl',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'M.S',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '10 February 2018',
+ 'review_id': 'R2VZVZYL6W85WX',
+ 'review_text': 'Nice product from Apple. Gud to buy this amazing device '
+                'especially if you are going from android to ios. Amazing '
+                'experience and i was little worried that is it safe to buy '
+                'from e commerce like amazon but i was wrong e commerce give '
+                'best deals. Go for it without a single doubt.',
+ 'review_title': 'Go for it 👍🏻',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Prasad dusane',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '9 February 2018',
+ 'review_id': 'R3KOTMH1E05IC1',
+ 'review_text': 'This I phone is best I phone & Amazon service is a great.. I '
+                'phone 8 best ,like,great....',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Naveen',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '9 February 2018',
+ 'review_id': 'R385ULXET42DEP',
+ 'review_text': 'I am facing network problem with my instrument. Tried '
+                'changing the handset with idea SIM works fine but when the '
+                'same SIM is inserted in iPhone 8 the network signal decreases '
+                'and calls are disconnected.',
+ 'review_title': 'Network issue',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'priyanka',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '8 February 2018',
+ 'review_id': 'R8M8T6MW1PFST',
+ 'review_text': 'EarPods with lightning connector and lightning to headphone '
+                'jack adapter are missing in the box',
+ 'review_title': 'Do not buy - Missing accessories',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=2&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=2&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'mounika',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '7 February 2018',
+ 'review_id': 'R3G8S4OJWX8U5Y',
+ 'review_text': 'Nothing new apart from camera, chip and back glass finish. '
+                'But i like it',
+ 'review_title': 'But i like',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=2&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'prashant Attri',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '6 February 2018',
+ 'review_id': 'R20ILMP9G3KC6B',
+ 'review_text': 'AWESOME PHONE\n'
+                'CAMERA QUALITY GREAT\n'
+                'ONE OF THE BEST THING IN THIS MOBILE THAT SPEAKERS SOUND '
+                'INCREDIBLE.\n'
+                'GOOD',
+ 'review_title': 'VERY GOOD',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=2&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Db',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 February 2018',
+ 'review_id': 'R2LORWAH88KQPP',
+ 'review_text': 'Need original invoice in individual name. Please contact as '
+                "it's urgent.",
+ 'review_title': 'Three Stars',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=2&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'G V Pavan kumar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 February 2018',
+ 'review_id': 'RUE0QQDJNTTEG',
+ 'review_text': 'Phone is good  but can be skipped if u are already using '
+                'iPhone 6/7 as it has same old design only upgrade is latest '
+                'chipset and glass back instead of metal back. Camera wise '
+                'slight improvement both front and back\n'
+                'I would recommend iPhone 8 plus and if u can afford then go '
+                'for iPhone x.',
+ 'review_title': "Apple's best and most boring iphone",
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=2&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'robin',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 February 2018',
+ 'review_id': 'R31UPI0CEBPEHU',
+ 'review_text': 'good',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=2&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Manan',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '4 February 2018',
+ 'review_id': 'RSLF2YAZCPH95',
+ 'review_text': 'Amazing phone seriously',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=2&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'umang singhal',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '4 February 2018',
+ 'review_id': 'R8CGPGEN2JY86',
+ 'review_text': 'iphone is the trend in India and iPhone 8 and iPhone x is the '
+                'latest in 2017\n'
+                'I can buy this is some time\n'
+                'BRIEF DESCRIPTION :-\n'
+                '14.73 centimeters (5.8-inch) capacitive touchscreen with 2436 '
+                'x 1125 pixels resolution\n'
+                'iOS v11.1.1 operating system with 1.3GHz Apple A11 Bionic '
+                'hexa core processor, 3GB RAM, 256GB internal memory and '
+                'single SIM\n'
+                '2716mAH lithium-ion battery\n'
+                '1 year manufacturer warranty for device and 6 months '
+                'manufacturer warranty for in-box accessories including '
+                'batteries from the date of purchase\n'
+                'If this review helped you please vote helpful',
+ 'review_title': 'Iphone 8 review latest 2018',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=2&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'uttam',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '2 February 2018',
+ 'review_id': 'RU8XGHZNSKMVV',
+ 'review_text': 'Amazon Order  # 402-2038021-8872368.Further, To make up for '
+                'this we will add a gift card Rs.500 on new order placed which '
+                'you can use for your next purchase at Amazon.in this '
+                'commitment you requested give rs.500 in my account.',
+ 'review_title': 'Three Stars',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=2&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Ch. Saurav gujjar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '31 January 2018',
+ 'review_id': 'RQRN0EOS3P6EX',
+ 'review_text': '',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=2&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Vasanth Sasidhara Kurup',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '31 January 2018',
+ 'review_id': 'R3CA96C71K2HG',
+ 'review_text': 'Timely Delivery and Excellent product!!!',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=15&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=15&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'sanjeev pandey',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '1 October 2017',
+ 'review_id': 'R1K11LRIPXCCP8',
+ 'review_text': 'Worth the offer price',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=15&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Vivek Subramanyam',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '1 October 2017',
+ 'review_id': 'R26MIXVMCZ139Y',
+ 'review_text': 'Superb no words..! Really rocking',
+ 'review_title': 'It’s an iPhone 8',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=15&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Goutham',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '30 September 2017',
+ 'review_id': 'RX0QT8KRVHQQN',
+ 'review_text': 'Very quick delivery, great phone',
+ 'review_title': 'great phone',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=15&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Divyan',
+ 'comments_count': '3',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '30 September 2017',
+ 'review_id': 'R7UVB6X07NUME',
+ 'review_text': 'Initial Review ( 30-Sep-2017)\n'
+                'Received the IPhone 8 today. Very quick delivery by Amazon '
+                '(got delivered way before the expected date). I got a very '
+                'good deal on exchange offer for my previous IPhone 6s - '
+                'Nothing wrong with it, however the latest IOS 11 update was '
+                'taking a toll on the ageing battery, so is the upgrade).\n'
+                'Since visually similar to 6s to 8, initially did not feel '
+                'much difference (nowhere the number 8 written on the phone '
+                'that can easily be seen). However when tried to take photos '
+                'of fast moving objects the improvement in camera came into '
+                'instance attention. The phone itself felt very snappy and '
+                'raring to go on a rampage. Restoring from the previous '
+                'backup, and take it on to a spin with whatever the daily '
+                'chores it has to handle.\n'
+                'Will come back with more updates once the things are settled '
+                'a bit down).\n'
+                'PS: I got a Spigen Liquid Crystal Case ordered and put on the '
+                'phone. It looks much better than the previous Neo hybrid case '
+                '- just in case anyone wants to know)\n'
+                '03/SEP/2017\n'
+                'Here is an update on the battery life. It is very good news, '
+                'in fact tbe bettery drain is much much lesser than my 6s or a '
+                "friend's SE.For comparison, I have restored all the settings "
+                'from 6s and using all the applications.It is possible that '
+                "after two years of use, 6s's battery is weak. However "
+                "friend's SE is fresh ( hardly a month old).\n"
+                'I have decided to add a tempered glass too , after watching '
+                "iPhone 8 the 'fall tests' popping up in Youtube. Giving a "
+                'shot to "PowerBot PB901-i7 World\'s Thinnest 0.2mm Premium '
+                'Tempered Glass Screen Protector for iPhone 7" skipping all '
+                'other famous branded solutions. Will post here how the '
+                'experience is.',
+ 'review_title': 'Fantastic early delivery by Amazon, very nice phone.',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=15&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Mayank',
+ 'comments_count': '28',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '22 September 2017',
+ 'review_id': 'R2RVLK9Z3VF86U',
+ 'review_text': 'Wowww... just booked my kidney to pre-order this',
+ 'review_title': 'Kidney pre booked',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=14&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=14&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Ravi N Padhy',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '10 October 2017',
+ 'review_id': 'R3IMP4IDP7PC4M',
+ 'review_text': 'Great',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=14&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Harika',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '8 October 2017',
+ 'review_id': 'R22ELW4SU58XS6',
+ 'review_text': 'Initially I was feeling it heated a bit but seems like it '
+                'settled down now and everything is fine.\n'
+                'Battery when played videos seems like everyday charging.\n'
+                'AR apps are amazing with iPhone 8 and photos are stunning',
+ 'review_title': '... I was feeling it heated a bit but seems like it settled '
+                 'down now and everything is fine',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=14&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Yogesh Pawar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '8 October 2017',
+ 'review_id': 'RYCXI7OZZ63TR',
+ 'review_text': 'Very Happy with iPhone 8',
+ 'review_title': 'Happy',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=14&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Nimitt',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '6 October 2017',
+ 'review_id': 'R1TPXQI20GPFMI',
+ 'review_text': 'Best phone phone I have ever used this is great phone . If '
+                'you are planning to buy a phone this is a must',
+ 'review_title': 'World’s best phone',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=14&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Hemant',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '6 October 2017',
+ 'review_id': 'R275SWNMVHQH1J',
+ 'review_text': 'Simply awesome',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=14&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Syam Dagani',
+ 'comments_count': '2',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 October 2017',
+ 'review_id': 'R39I6YW7KUDCJR',
+ 'review_text': 'Received the IPhone 8 a day after launch that too amidst '
+                'total confusion. The deal on exchange offer for my IPhone 6s '
+                'looked unworthy particularly after knowing that I could have '
+                'got 4000/- extra had I bought it from Amazon’s competitor '
+                '(shall I name it... ha ha I think it’s understood)... well '
+                'that’s about the seller.\n'
+                'Since 8 is visually similar to 6s, the feel of owning or '
+                'rather flaunting a Apple product after that much hyped launch '
+                'was doomed... that’s about The manufacture\n'
+                'Few minor upgrades here and there, new chip, better camera... '
+                'nothing more\n'
+                'Overall a huge disappointment on all fronts... The '
+                'manufacturer, The Seller and Self.\n'
+                'A piece of advice... do check the other website before '
+                'buying😊',
+ 'review_title': 'better camera.',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=14&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '4 October 2017',
+ 'review_id': 'R3EWMTSMADQBR1',
+ 'review_text': 'Nice phone',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=14&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Maulik Pandya',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '3 October 2017',
+ 'review_id': 'RDFI4L9GL9399',
+ 'review_text': 'Excellent delivery by Amazon...got the phone on same day I.e. '
+                '29th September. Hats off to Amazon.\n'
+                'iPhone 8 looks similar to iPhone series.\n'
+                'Only pro is it has very good camera and selfies taken in '
+                'bright light. No any mode still given in iPhone 8 if compare '
+                'to iPhone plus 8.\n'
+                'You may disappointed if you are moving from iPhone 7 or '
+                'iPhone 7 Plus to iPhone 8.\n'
+                'Conclusion is you may find better or say the best option '
+                'lesser than this price.....if you are not an Apple lover.',
+ 'review_title': 'Old things....new packet.....high price!!!',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=14&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Rushyanth',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '3 October 2017',
+ 'review_id': 'R1D7SETM7HBVC',
+ 'review_text': 'The camera is too good ,The only thing is back panel is too '
+                'slippery we’ll have to be a little careful while handling .',
+ 'review_title': 'Great Phone',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=14&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'rohit',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '2 October 2017',
+ 'review_id': 'R2993M9K5GN9IA',
+ 'review_text': 'Awesome deal and as usual product',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=13&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=13&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Human carpenter',
+ 'comments_count': '2',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '23 October 2017',
+ 'review_id': 'RPZH6JO8QSYJ2',
+ 'review_text': 'Very disappointed with the product, the phone is defective '
+                "and Amazon is not replacing it, they'll also not return my "
+                'phone that I surrendered for exchange, be careful with high '
+                'end purchases.',
+ 'review_title': 'Defective piece',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=13&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'manjeet singh',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '22 October 2017',
+ 'review_id': 'R239D5DR90EWDE',
+ 'review_text': 'Excellent product. Manjeet singh',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=13&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Arijit Chaudhary',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '20 October 2017',
+ 'review_id': 'R2D5V9XT8FFDU0',
+ 'review_text': 'Excellent product and delivery',
+ 'review_title': 'Four Stars',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=13&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'KRIPAL SINGH',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '16 October 2017',
+ 'review_id': 'RJEZ4SYZDR9J',
+ 'review_text': 'Superb Phone',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=13&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Nishanth Krishna',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '16 October 2017',
+ 'review_id': 'R6FPEGPFJOWFO',
+ 'review_text': 'Such an enticing phone and the gold color is remarkable.',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=13&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Zeeshan',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '14 October 2017',
+ 'review_id': 'R1AKC259ZFQ8ZR',
+ 'review_text': 'Guyzzz,\n'
+                "Please don't buy this iPhone because the  battery of this "
+                'iPhone is damaged .\n'
+                'As there are many news coming that the battery of this iPhone '
+                'is damaged.\n'
+                'So, this is not a good upgrade if you want to upgrade to the '
+                'new version of iPhone you should wait for iPhone X.',
+ 'review_title': "Don't go for this iPhone because this is damaged phone.",
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=13&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '2',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '13 October 2017',
+ 'review_id': 'ROTR9AB8G7NEE',
+ 'review_text': 'Usability:\n'
+                'I was an Android user, shifted to iOS for the first time. '
+                'Initially things were difficult, because almost everything we '
+                'could do easily in android, is done in a different/difficult '
+                'manner. That may change in a few days.\n'
+                'Display :\n'
+                'I am really not happy with the display quality, when I '
+                'compare it with the display of my moto G4+, I felt moto G4+ '
+                'display is more vibrant. Moto G4+ has 401 PPI (1080x1920) '
+                "display whereas in iphone it's 326 PPI(1334x750). But, Iphone "
+                'display has more clarity and details on the picture.\n'
+                'Battery :\n'
+                'I keep my mobile net and Bluetooth (to pair with smart watch, '
+                'which means background software will be running for watch '
+                'sync) ON all the time, so if I charge in the morning, by 6.40 '
+                'it reaches 30% approx on a medium usage. Otherwise around 50% '
+                'may be left by end of the day.\n'
+                'Charging:\n'
+                'It wont come with a fast charger, so it takes a bit longer '
+                'when compared with moto G4+ with fast charger. Moto G4+ with '
+                '3000mAh battery takes around 1.5hrs to charge full (May vary '
+                'based on the network). Compared to this, charging is very '
+                'slow in Iphone 8.\n'
+                'Usability : BOTH THE SIDES ARE GLASS, FOR THE FIRST TIME I '
+                'HAD TO PUT A BACK COVER.\n'
+                'Size : The only thing I like the most, This is the perfect '
+                'size for a phone. After using this phone, other bigger '
+                'display phones might look like a tablet (seriously).\n'
+                'Sound : Good clarity and loud.\n'
+                'Other features found interesting:\n'
+                '  a) 3D Touch\n'
+                '  b) Color of the phone.\n'
+                '  c) Camera (Not sooo great though)\n'
+                '  d) Headset\n'
+                '  e) Siri\n'
+                '  f) Augmented Reality (AR) games.\n'
+                'Siri : I use virtual assistants a lot, like cortana of '
+                "window, google assistant, and now Siri. It's advanced in some "
+                "area, but lags in some other. For example, using Siri It's "
+                'easy to book a cab, sending a message in whatsapp using voice '
+                "commands ..etc. With Google assistant, it's bit difficult "
+                '(yet possible to an extend).\n'
+                'Keyboard : Nothing beats google keyboard (gboard), Still '
+                'using in iOS.\n'
+                'Speed : Great response. It has to be for the price paid.\n'
+                'Now why I chose Iphone over Galaxy note 8?\n'
+                'Reason 1 : Samsung products are for 1 year usage, later it '
+                'becomes an headache. This is the only reason I dint go for '
+                'samsung.\n'
+                "Otherwise feature wise, look wise, value for money wise it's "
+                'super cool.\n'
+                'Tell me your views on it.',
+ 'review_title': 'Fairly Happy (By An Old Android User)',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=13&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '12 October 2017',
+ 'review_id': 'RQL767I94XDPF',
+ 'review_text': 'Amazing piece of Tech iphone 8. I have been using Iphone 6s '
+                'for longtime now and have traded of my iphone 6s 16GB for the '
+                'new Iphone 8 in prelaunch offer(may not be for iphone 7 to '
+                'iphone 8 but for ppl with 2 or more generations old phone can '
+                'definitely look for i8).\n'
+                'Thanks to amazon for very good choice of offers during '
+                'pre-launch and delivering it on 29th SEPT which i was not '
+                'expecting. they were spot on with commitment.\n'
+                'I booked Iphone 7 128GB on exchange earlier with another ecom '
+                'site and cancelled the delivery after seeing amazon offer on '
+                'iphone 8.\n'
+                'Happy with the current Iphone 8.\n'
+                '- Best part i compare with 6s and 8 is battery. amazing '
+                'battery management. it last more than day on all time 4G on '
+                'and listen to songs and using social apps like whatsapp, '
+                'twitter, facebook.\n'
+                '- Camera is very sharp in capturing images. 4k in 24fps '
+                'simply unthought of.\n'
+                '- Remaining all stay as same compared to existing models.\n'
+                'Fast charge and wireless are not yet tried and do feel the '
+                'need also at this point looking at the battery standby that '
+                'phone gives.\n'
+                'could have waited for iphone X but iphone 8 itself was 64k '
+                'which is steep price considering other android offering with '
+                'similar specs.\n'
+                'But end of day , No phone like iphone for me.',
+ 'review_title': 'Amazing phone and great deal',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=13&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Pawan Kumar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '11 October 2017',
+ 'review_id': 'RAD6BP1BRB8RO',
+ 'review_text': 'Absolutely brilliant. Thanks Amazon',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=13&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '11 October 2017',
+ 'review_id': 'R1LAO9K5D0ENB2',
+ 'review_text': 'Awesome',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=12&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=12&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Mahesh Yadav',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '4 November 2017',
+ 'review_id': 'RAAW0WM8IBJC0',
+ 'review_text': 'Iphone 8 is as per expectations and Amazon delivery is also '
+                'superb.',
+ 'review_title': 'Amazon is good',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=12&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '30 October 2017',
+ 'review_id': 'R3GHX01KKLJBBY',
+ 'review_text': 'Only one word awesome.',
+ 'review_title': 'Awesome',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=12&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Danish khan',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '30 October 2017',
+ 'review_id': 'R2HLVR9IIEGIPK',
+ 'review_text': 'Product is too good as it is iPhone and delivery on time.',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=12&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '29 October 2017',
+ 'review_id': 'R1ZC9AK3UIUADQ',
+ 'review_text': 'Battery blast problem in iphone 8 is right or wrong',
+ 'review_title': 'Battery of iphone 8',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=12&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Superkid',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '29 October 2017',
+ 'review_id': 'R1B17FBG801WJ4',
+ 'review_text': 'Samsung S8 is much better. Waste of money.',
+ 'review_title': 'Not good',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=12&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Rahul',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '28 October 2017',
+ 'review_id': 'RUXZZK47N34XU',
+ 'review_text': 'Good phone. Battery backup is good',
+ 'review_title': 'Nyc phone',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=12&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Yash sharma',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '28 October 2017',
+ 'review_id': 'RP3KAKCROTM3Q',
+ 'review_text': "This brand is the world's most popular brand and the new "
+                "iPhone 8 is going to help you develop so much that you can't "
+                'believe give it to your friends and family on this Halloween '
+                'as and gift and see the fun',
+ 'review_title': 'Best phone for gift',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=12&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '26 October 2017',
+ 'review_id': 'R20E5EF3PTU6B8',
+ 'review_text': 'First of all very much pleased with the amazon delivery. '
+                'Thanks for the delivery a lot before time cz of which u made '
+                'my Diwali spcl.And about the phone I guess there nothing much '
+                'to say as everyone knows wat Apple brand is n they have lived '
+                'up to the expectations as always. This phone is just a '
+                'beast...',
+ 'review_title': 'Really awsum phone & also the delivery',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=12&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '2',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '24 October 2017',
+ 'review_id': 'RKCRG9SEM47B9',
+ 'review_text': 'Amazon provide me used phone which has different IMEI No. On '
+                'phone and box seal. My phone used by some kiarah ghirdhari '
+                'whose had login her a/c in play store app',
+ 'review_title': 'different IMEI No on box and phone *#06#',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=12&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Vinod kumar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '24 October 2017',
+ 'review_id': 'R3JCSAPUM85RWN',
+ 'review_text': 'Nice phone',
+ 'review_title': 'One Star',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=11&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=11&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Desai Vimith |REVIEWER|',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '11 November 2017',
+ 'review_id': 'RRTQQ981IMIOQ',
+ 'review_text': 'After reading highs and lows please check out my Opinion.\n'
+                'There are some HIGHS and LOWS of Iphone 8 which are as '
+                'follows:\n'
+                '-------------\n'
+                'HIGHS\n'
+                '-------------\n'
+                '● SPEEDY PROCESSOR\n'
+                '● WIRELESS CHARGING\n'
+                '● SLICK SOFTWARE\n'
+                '● CLASS LEADING CAMERA\n'
+                '-----------\n'
+                'LOWS\n'
+                '-----------\n'
+                '● DATED DESIGN\n'
+                '● FAST CHARGING COSTS EXTRA\n'
+                '---------------------\n'
+                'MY OPINION\n'
+                '---------------------\n'
+                'Thing is quite simple,\n'
+                '● If you are an Iphone lover I would simply recommend you '
+                'Iphone X over this, because you will regret yourself within 2 '
+                'months of buying this phone. You will want an Iphone X '
+                'badly.\n'
+                '● And if you are not an Iphone lover and trying to buy this '
+                'phone, believe me SAMSUNG NOTE 8 is just an awesome phone '
+                'when you buy you will not regret it after 6 months too. '
+                'Because Note 9 is no where near to launch within these 6 '
+                'months.\n'
+                'So simply I want recommend this phone, doesnt mean this phone '
+                'is not good or something like that.\n'
+                '● If you found my views helpful do let me know by pressingthe '
+                'helpful button below.\n'
+                'Thankyou so much.',
+ 'review_title': 'IPHONE 8 HITS SOME HIGH NOTES, BUT IT IS OVERSHADOWED BY '
+                 'IPHONE X, READ WHY?',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=11&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'TechSpace',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '11 November 2017',
+ 'review_id': 'RQCEQE9K1W4V',
+ 'review_text': 'Hey guys, if you are thinking of purchasing the latest iPhone '
+                "8, chances are that you already know it's best for you but if "
+                "you wanna know some extra stuff, it's here. Just pay a look "
+                "and you'll be glad you did.\n"
+                "Let's get on with it.\n"
+                '=====PROS=====\n'
+                '-Body:\xa0Aluminum 7000 frame, reinforced glass front and '
+                'rear, IP67 certified for water and dust resistance. Gold, '
+                'Space Gray, and Silver color options.\n'
+                '-Screen:\xa04.7" 16M-color LED-backlit IPS LCD screen of 750p '
+                'resolution, 326ppi, True Tone adjustment via four-channel '
+                'ambient light sensor, wide color gamut, 3D Touch.\n'
+                '-OS:\xa0Apple iOS 11.\n'
+                '-Chipset:\xa0Hexa-core (2 Monsoon + 4 Mistral) 2.09GHz Apple '
+                'CPU, tri-core Apple GPU, 2GB of RAM, Apple A11 Bionic SoC.\n'
+                '-Camera:\xa012MP camera with F/1.8 lens, optical image '
+                'stabilization, quad-LED flash with slow sync, phase detection '
+                'auto focus, wide color capture.\n'
+                '- Video recording:\xa02160p@60/30fps, 1080p@30/60/120/240fps '
+                'video recording.\n'
+                '-Selfie:\xa07MP F/2.2 front-facing camera with BSI sensor and '
+                'HDR mode, 1080p@30fps video.\n'
+                '-Storage:\xa064GB or 256GB of built-in storage.\n'
+                '-Connectivity:\xa04G LTE Cat.12; Wi-Fi a/b/g/n/ac; Bluetooth '
+                '5.0; Lightning port; GPS with A-GPS, GLONASS, GALILEO, QZSS; '
+                'NFC (Apple Pay only).\n'
+                '-Battery:\xa01,821mAh battery, wireless charging (Qi '
+                'compatible).\n'
+                '-Misc:\xa0Stereo speakers, pressure-sensitive Home key with '
+                'fingerprint scanner, Taptic Engine.\n'
+                '=====CONS=====\n'
+                '-Poor screen-to-body ratio (too much bezel for the size).\n'
+                '-No 3.5mm audio jack (ships with a Lightning to 3.5mm '
+                'adapter).\n'
+                '-No microSD slotiTunes is still required for manual music '
+                'upload.\n'
+                '-No fast charger provided in the box (and the optional one is '
+                'expensive).\n'
+                '-Video camera still recording mono audio only.\n'
+                '=====THOUGHTS=====\n'
+                "This should have been a 7S. That simple. But it's "
+                'complicated. Too complicated perhaps for Apple as we used to '
+                "know it. On paper - and in actual fact - there's enough new "
+                "stuff in that package. Yet, the Apple iPhone 8 doesn't go "
+                "beyond the iterative upgrade we've come to expect from an S "
+                "model. Is it because it's impossible to not take into account "
+                'the iPhone X? Or is it the new all-glass design is looking '
+                'too familiar?\n'
+                "Maybe it's the way Cupertino handled some of the upgrades. "
+                'Like the camera did get better thanks to a new sensor and '
+                "larger pixel size but Apple isn't exactly verbose about the "
+                "new imaging technology. There's fast-charging support too but "
+                "with a caveat: you're not getting it right out of the box. "
+                'Not with the supplied charger and cabling.That, and the steep '
+                'price may give Apple a hard time justifying the iPhone 8, '
+                'especially to iPhone 7 users. With no intention whatsoever to '
+                'downplay the good stuff about the iPhone 8, the new model and '
+                'its spec sheet are pretty predictable. The price is therefore '
+                'a bit of a surprise - and not a pleasant one either. Then '
+                "again, Apple's never had a problem getting the price it "
+                'thinks is right. Plus, the iPhone 8 may turn out to be '
+                "convincing enough. We're back right after the break to pop "
+                'the box open and begin to find out.\n'
+                '=====CONCLUSION=====\n'
+                "No doubt, that's it's one of the best phones of 2017 but the "
+                'fact that iPhone X is around the corner, purchasing this '
+                'makes no sense but if the Home button and the Touch ID is a '
+                'big deal for you, this is definitely a good choice.\n'
+                'If this review was helpful, please consider clicking on the '
+                'helpful tab. Thanks!\n'
+                'Happy purchasing!',
+ 'review_title': 'Is the iPhone 8 for you?',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=11&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Technical Guru',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '11 November 2017',
+ 'review_id': 'R2AW1JU1YTFI7R',
+ 'review_text': 'Truly Most Amazing Smartphone which hype went down due to '
+                'announced Iphone X"although priced insanely" ,aside display '
+                'iphone 8 and 8plus rules with its Fingerprint sensor ( not '
+                'kidding face id is a false product )and iphone 8 and 8 plus '
+                'ignores that ignoring Top-notch ,as finally it appears iphone '
+                '8 and 8 plus is the Great device although the better choice '
+                'is this one\n'
+                'https://www.amazon.in/gp/product/B0719KYGMQ/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B0719KYGMQ&linkCode=as2&tag=amazon04dd-21&linkId=01f4d5acb82c745b1def552e4aabddd4',
+ 'review_title': 'Worth the Price',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=11&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 November 2017',
+ 'review_id': 'R31A621CHLKPNU',
+ 'review_text': 'Nice phone',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=11&reviewerType=all_reviews&sortBy=recent>
+{'author_name': '9813342724',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 November 2017',
+ 'review_id': 'RVA5X4QSJYNHV',
+ 'review_text': 'Call recording is not free as like android',
+ 'review_title': 'Three Stars',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=11&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'SwordFish',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 November 2017',
+ 'review_id': 'R1U6XAZ9BE6TH5',
+ 'review_text': 'Purchased this directly from Apple store. Upgraded from '
+                "iPhone 7 64gb. If you're Apple person, almost no learning "
+                'curb. Price though is stratospheric though cheaper than '
+                'iPhone X.\n'
+                'Unit is blazing fast compared to my old iPhone. Screen is not '
+                'OLED but still look wonderful with True Tone feature. Lost '
+                'use of some software because developers did not upgrade their '
+                'software from 32-bit to 64-bit. Speaker sound is much '
+                'improved and really it is pleasure to listen while watching '
+                'movie. Even though optical zoom is only 2x, it is nice to '
+                'have. Digital zoom will go up to 10x but you pay in term of '
+                'graininess.\n'
+                'Guts are virtually same as iPhone X. Probably the last of '
+                '"old-style" iPhone and most perfect in term of integration of '
+                'software and hardware.\n'
+                "Will do wireless charging but you'll have to pony up extra "
+                'money for charger and stand. Unfortunately, it will not fast '
+                'charge like some Samsung android smart phone.\n'
+                'Best to invest in good case and screen protector as unit has '
+                'glass back (to facilitate wireless charging).\n'
+                'Snappy. Expensive. Camera Fantastic. iOS 11 very productive. '
+                'True tone display easy on the eye. Wireless charging is '
+                'awesome!\n'
+                'I have a Note 8 and iPhone 8 Plus. Note 8 has many features '
+                'and I love most, particularly Samsung Pay which works at way '
+                'more places than Apple Pay does. Stylus is good to scribble '
+                'stuff. Display is fantastic. iPhone 8 Plus with its execution '
+                '(app performance) and Apple Watch Series 2 experience trumps '
+                'Note 8 W/ Frontier S3 Watch.\n'
+                'My old iPhone 7 Plus leather case from Apple worked just '
+                'fine. The fast chargers I use with Note 8 work just fine with '
+                'iPhone 8 Plus with the case on. This is my most favorite '
+                'feature so far. True tone display and the snappy cameras with '
+                'portrait lighting gives the extra edge over Note 8.\n'
+                'iOS 11 is snappy. Migration of data from iPhone 7 Plus was '
+                'made lot easy & quick with the new Apple Watch like transfer '
+                'feature.\n'
+                'All in all, great for productivity seekers, fashion statement '
+                '& everything in between.',
+ 'review_title': "If you don't want iPhone X but still want best iPhone then "
+                 'this is it.',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=11&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'aditya',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '4 November 2017',
+ 'review_id': 'R1KR4KVQ10WO2E',
+ 'review_text': 'To Be Honest I Was Using Iphone 6s Before Buying Iphone 8 I '
+                'Found No Big Diffrence Between Them But The Camera Quality '
+                'Breaks All The Barrier Apple Took This To a Great Extent And '
+                'The Battery Backup Is Awesome Jio Is Providing A Buyback '
+                'Offer So You Should Check Up a Jio Store Before Buying It '
+                'Because Thats A Pretty Cool Deal ! Coming to the pHone The '
+                'display is awesome and the specs are great ! Phone is pretty '
+                'fast as it is using a11 bionic chip it is the most powerful '
+                'chip presented on a smartphone',
+ 'review_title': 'Is It Worth Buying Iphone 8? Pros And Cons',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=11&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amit',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '4 November 2017',
+ 'review_id': 'R3GBQAKKANH9UU',
+ 'review_text': 'It’s amazing',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=11&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Deep',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '4 November 2017',
+ 'review_id': 'R12ZNWOE3K7UH6',
+ 'review_text': 'Look Cool.',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=11&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'vaibhav vinkare',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '4 November 2017',
+ 'review_id': 'R765AU1DJX8OI',
+ 'review_text': 'Excellent phone',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=10&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=10&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Niranjanshriram',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '30 November 2017',
+ 'review_id': 'R3UA76G7ILA9FZ',
+ 'review_text': 'Excellent phone , upgraded camera features from iPhone 7 and '
+                'reasonable price compared to its precedor',
+ 'review_title': 'Just awesome',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=10&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Kaavya Gupta',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '30 November 2017',
+ 'review_id': 'R26YCJ2MQKXE4B',
+ 'review_text': 'It didn’t seem like a new phone, more like a second hand! And '
+                'the phone itself is Terrible',
+ 'review_title': 'Two Stars',
+ 'source_id': 1,
+ 'stars': '2'}
+2018-02-18 23:23:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=10&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Manzoorhan',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '29 November 2017',
+ 'review_id': 'R15N0SN1L6FS68',
+ 'review_text': 'iPhone8 stuck just in 40 days',
+ 'review_title': 'Iphone8 hanged..',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=10&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'vicky',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '18 November 2017',
+ 'review_id': 'R32O5BREMTHFJI',
+ 'review_text': 'Build quality is excellent\n'
+                'I upgraded from iphone 6 so definitely i feel the raw power '
+                '(A11 Bionic)\n'
+                '# Battery backup is too good when compared to  iphone 6\n'
+                '# sound quality is amazing, seen s8 comparing to it iphone 8 '
+                'is far better even louder and sharper than iphone 7 ! (Best '
+                'one I noticed)\n'
+                '# Yes the fast charge is amazing but I didn’t bought the fast '
+                'charger I’m using MI POWER BANK 2 10000mah one which can also '
+                'fast charge. Its the best option as you get it for just 1000 '
+                'rupees. Using this powerbank from 1% to 80% it charges in '
+                'just 1hour but remaining 20% will charge for antother '
+                '40minutes! Don’t know why. That last 20% also lasts longer !\n'
+                'Bought it from paytmmall after cashback just got it for 52k '
+                'which is best deal in india. As paytm ships through 3rd party '
+                'delivery like bluedart they wont mention the product details '
+                'for safety purpose\n'
+                '# Using jio network no heat issues at all even with 3-4 hours '
+                'voice calls, No signal drop in traveling\n'
+                '# Bluetooth range is too high no signal drops when you use '
+                'wireless headphones even for 20 meters',
+ 'review_title': 'Great phone',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=10&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '16 November 2017',
+ 'review_id': 'R1XJF8TD9H8TD7',
+ 'review_text': 'Worthless.. not worth the price',
+ 'review_title': 'One Star',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=10&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Karan',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '16 November 2017',
+ 'review_id': 'R899Z5T2ZKKJR',
+ 'review_text': 'Got it the same evening of India launch...amazing Amazon!!! '
+                'Besides got the best exchange deals on my old iphone 6!!!',
+ 'review_title': 'Amazing Amazon Delivery',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=10&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'VISHAL MEHTA',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '16 November 2017',
+ 'review_id': 'R18CJ3W9O0V6PJ',
+ 'review_text': 'Nothing exceptional when compared to Iphone 7... Had an issue '
+                'with Amazon with respect to payment. They couldnt sort it out '
+                'stating that there system is not adaptable :-) Funny but '
+                'true..',
+ 'review_title': 'Buy only if you want to upgrade to newest Iphone.. Iphone 7 '
+                 'will also do.. Make sure once you do payment, you get '
+                 'confirmation.',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=10&reviewerType=all_reviews&sortBy=recent>
+{'author_name': ' shiva',
+ 'comments_count': '2',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '14 November 2017',
+ 'review_id': 'R10VGAN3IRBYV6',
+ 'review_text': 'Hi the box was unsealed and the head phones is missing inside '
+                'the box',
+ 'review_title': 'One Star',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=10&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'LALIT HANSRAJ GELRA',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '12 November 2017',
+ 'review_id': 'R1OTU6EHPLYVG3',
+ 'review_text': 'It is ok',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=10&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'raj_ankitraj',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '12 November 2017',
+ 'review_id': 'R3BFFO8GJT5RIF',
+ 'review_text': 'Amazing phone and amazon trust an ideal pair!',
+ 'review_title': 'Must buy!',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=9&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=9&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'abhimanyu',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '7 December 2017',
+ 'review_id': 'RFLCVZ0WQK23P',
+ 'review_text': 'If ur an iPhone 6, 6s or 7 user and if ur rich  enough , you '
+                'should probably get iPhone X and not iPhone 8 . For  those '
+                'who are using iPhone 5s and below , upgrading to iPhone 8 is '
+                'a good choice',
+ 'review_title': 'IF UR AN iPhone 6 or 7 USER',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=9&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Vikas tomar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '6 December 2017',
+ 'review_id': 'R19IA7C5JO3ICR',
+ 'review_text': 'Never ever buy... This. .. Earpods were missing and no '
+                'replacement done in this regard cheap...',
+ 'review_title': 'Never buy',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=9&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'abdul',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 December 2017',
+ 'review_id': 'R1B0NJMN7ZSXLH',
+ 'review_text': 'Use less',
+ 'review_title': 'One Star',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=9&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Toshi Aley',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 December 2017',
+ 'review_id': 'R2D70M53E4OM87',
+ 'review_text': 'iPhone 8 Review\n'
+                '✔️ DESIGN:\n'
+                "• The iPhone 8's aluminium rear has been replaced with a "
+                'glass finish - which feels impressively grippy in hand - its '
+                'overall finish is the same as that which debuted three years '
+                'ago. This means it does feel somewhat dated, especially when '
+                "placed down next to\xa0Samsung's Galaxy S8, although those "
+                "fond of Apple's go-to design unlikely will have any "
+                'complaints.\xa0\n'
+                '• \u200eThis dated feel is largely down to the\xa0chunky '
+                "bezels that surround\xa0the 4.7in screen, with Apple's rivals "
+                '- and even Apple itself - making the move towards '
+                "full-screen, bezel-free devices. This does mean that there's "
+                "room for Apple's trusty Touch ID sensor underneath the "
+                'display, though, which has so far worked flawlessly every '
+                'time.\n'
+                '• \u200eLike the\xa0iPhone 7, the iPhone 8 is waterproof too, '
+                "thanks to the handset's IP67 certification which means, in "
+                'theory, it should withstand being dunked into water up to 1 '
+                'metre for 30 minutes. This has rung true for us so far, but '
+                'we\xa0try and avoid getting the handset too wet given its '
+                'exposed ports on the bottom.\xa0\n'
+                "• \u200eThe iPhone 8 is a tad heavier than last year's iPhone "
+                '7 at 148g, which we found made it feel more robust. It '
+                'apparently is, according to Apple, which boasts that the '
+                'glass on the phone\'s rear is the "most durable glass ever on '
+                'an iPhone." We haven\'t managed to drop our iPhone 8 yet, but '
+                'it feels like it could withstand a tumble or two.\n'
+                "• \u200eElsewhere on the handset you'll find the Lightning "
+                'port on the bottom edge is flanked by a speaker and '
+                "microphone, and there's nothing up top. There's no return for "
+                'the 3.5mm audio jack, but Apple includes a Lightning to 3.5mm '
+                'headphone jack adapter in the box.\n'
+                "• \u200eThere's also updated stereo speakers, which make the "
+                'phone around 25 percent louder than the iPhone 7.\n'
+                '✔️ DISPLAY:\n'
+                "• The iPhone 8's display is largely identical to the iPhone "
+                '7. And the 6S, and, er, the iPhone 6. This means that the '
+                '4.7in screen, with its 1,334x750 resolution, does feel '
+                'somewhat\xa0old-fashioned, not to mention small, compared to '
+                'the likes of the Galaxy S8 and Pixel 2, again, added to by '
+                'the bezels that surround it. Quality wise, while it pales '
+                "against its rivals on paper, we've no complaints, and it "
+                'continues to be among the sharpest and most vibrant on the '
+                'market.\n'
+                "• \u200eThe only real change to the iPhone 8's screen is the "
+                "addition of Apple's True-Tone technology that first debuted "
+                'on the 9.7in iPad Pro.\xa0This True Tone alters the colour '
+                'temperature of the display depending on the environment in '
+                "which you're in, reducing the harsh blue tones typical of an "
+                "LCD when you're in a\xa0dimly lit room.\n"
+                '✔️ PERFORMANCE:\n'
+                "• Apple's new A11 Bionic chip sits under the hood of the "
+                "iPhone 8 and, as expected, it's incredibly fast.\n"
+                '• \u200eSpecs-wise, the six-core CPU comprises of two '
+                'low-performance cores and four high-performance cores, with '
+                'the regular cores being 25 per cent faster than the previous '
+                'A10 chip, and the high-performance cores being up to 75 per '
+                'cent faster than the A10 SoC, according to Apple It also '
+                "comes paired with Apple's first homegrown GPU, which offers "
+                '30 per cent more performance than the A10.\n'
+                '✔️ SOFTWARE:\n'
+                '• The iPhone 8 ships with iOS 11, naturally, which brings\xa0'
+                'with it improvements to Siri, reworked lock screen '
+                "notifications, a new-look Control Centre and Apple's "
+                'redesigned App Store.\n'
+                '✔️ CAMERA:\n'
+                '• On paper,\xa0the main camera on the iPhone 8 is no '
+                'different to that found on the iPhone 7, with Apple retaining '
+                'the same 12MP sensor with built-in f/1.8 aperture and optical '
+                'image stabilisation (OIS).\n'
+                '• \u200eThe biggest changes come on the video side of things '
+                'with 4K recording now available at 60fps and slo-mo video now '
+                '1080p at 240fps - both of which are double the iPhone 7 and '
+                'the former is a first for any smartphone.\n'
+                '• \u200eI tried it out in a variety of different lighting '
+                'conditions, indoor and out, and\xa0were impressed with the '
+                "camera's capabilities - in particular when low lighting is "
+                'involved, something our iPhone 8 struggled to cope with. This '
+                'is aided by the always-on HDR, which increases saturation '
+                'while retaining more natural and realistic colours than '
+                'images shot on the Note 8, for example.\xa0\n'
+                '• \u200eThe biggest changes are seen on the video side,\xa0'
+                'with 4K recording now available at 60fps and slo-mo video now '
+                '1080p at 240fps - double what the iPhone 7 has on offer.\n'
+                "• \u200eOn the front of the phone you'll find a 7MP camera "
+                'f/2.2 aperture, Retina Flash and 1080p video recording,\xa0'
+                "and while this isn't as great in low-light as the rear-facing "
+                "snapper, it's perfectly good enough for the occasional selfie "
+                'and Snapchatting, or whatever it is you kids get up to. '
+                "Unfortunately, however, you don't get Apple's new Portrait "
+                'Mode on the iPhone 8, nor the new Portrait Lighting feature '
+                'that the iPhone 8 Plus has.\n'
+                '✔️ BATTERY LIFE:\n'
+                '• According to Apple, the battery inside the iPhone 8 will\xa0'
+                "last around two hours longer than the iPhone 7's, despite "
+                'weighing in slightly smaller at\xa01,821mAh.This has proved '
+                'accurate during my time with the iPhone 8 so far. It usually '
+                'gets me to the end of the day - just, whereas I usually had '
+                'to charge my iPhone 8 most evenings.\n'
+                "• \u200eIt's much less of a hassle to charge the iPhone 8 "
+                "too, as it - along with the iPhone X - is Apple's first "
+                "smartphone to support wireless charging. What's more, whereas "
+                'Apple usually requires expensive propriety accessories, the '
+                'iPhone 8 supports the Qi wireless charging standard, which '
+                "means it'll work with most third-party charges on the "
+                'market.\xa0\n'
+                '✔️ VERDICT:\n'
+                '• In short the iPhone 8 is an excellent phone and there are '
+                'some great new editions to get excited about, such as the '
+                "inclusion of wireless charging for the first time and Apple's "
+                'new A11 Bionic CPU, which is benchmarks are anything to go '
+                'by, is the fastest mobile CPU on the market right now.\xa0\n'
+                '• \u200eBeyond that, though, the iPhone 8 is an incremental '
+                "update over last year's iPhone 7, and its large bezels and "
+                'three-year-old design mean it does feel somewhat dated '
+                'compared to the likes of the Galaxy S8 and Pixel XL 2, '
+                'despite carrying a similarly-expensive price-tag.\xa0\n'
+                'Thank You PEACE..\n'
+                "( IF YOU FIND THIS REVIEW HELPFUL PLEASE HIT THE 'HELPFUL YES "
+                "VOTE')",
+ 'review_title': 'I give iPhone 8 a 4 🌟',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=9&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Law People',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 December 2017',
+ 'review_id': 'RXAAS3BIT80VZ',
+ 'review_text': 'Very ordinary Camera\n'
+                'Not worth the price or upgrade from previous iPhones.',
+ 'review_title': 'Very ordinary Camera Not worth the price or upgrade from ...',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=9&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 December 2017',
+ 'review_id': 'R2CJBQPNY2N2SS',
+ 'review_text': 'Amazon + Apple = Amazable',
+ 'review_title': 'A “ Wow” factor!',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=9&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '3 December 2017',
+ 'review_id': 'R394900RUSSPPJ',
+ 'review_text': 'Earphones missing. Never expected this from Apple.',
+ 'review_title': 'Earphones missing',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=9&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Shubham Sharma',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '3 December 2017',
+ 'review_id': 'R3S6C9DOUPW0E1',
+ 'review_text': 'If anyone is interested to know how the 8 Plus performs '
+                'compared to the iphone 7.\n'
+                'Camera is a little better and you notice it for sure. It is a '
+                'lot better in low lights conditions.\n'
+                'SPEED, I was using a 7 and I notice a much snappier Safari '
+                'and iMessage screens. Part of it may be IOS 11 but pages pop '
+                'really fast. It is way faster than the original 7.\n'
+                'Gold (Pink-gold) looks awesome!!! But is so slick. There are '
+                'no lines and it looks like a solid 1 piece product. Most '
+                'people will use a case which hides the back anyway so maybe '
+                'color is not that important. Mainly if you want a white front '
+                'or black.\n'
+                'Any case with a large camera cutout like the CM4 wallet case '
+                'works with the 8. But most likely all other will not. But I '
+                'promise you this phone is slippery when dry!!\n'
+                'Overall I love it! Fastest & best device that I have ever '
+                'used. I can out type the 7 sometimes on reviews but thiamine '
+                'keep up no problem.\n'
+                '56 gb is perfect in size for most everyone. Hardcore photo '
+                'and video people may want the 256gb.\n'
+                "The adapter sounds fine with my expensive headphones. It's "
+                'not really that large either. The lightning headphones sound '
+                'really good to me. I tested the same song with the same '
+                'headphone using a 7 and the 8 with the adapter and I cannot '
+                'tell the difference. In some ways the 8 with the adapter '
+                'sounded cleaner and had a little less aliasing hiss from the '
+                'analog to digital conversion process. So beside have a little '
+                'while cable sticking out I think the 8 audio is fine.\n'
+                'IPhone 4,5, 5s, SE, 6 and 6s users will feel a huge speed '
+                'increase. The 7 is not far off speed wise but it is '
+                'noticeable to me.',
+ 'review_title': 'Best phone for iPhone lovers',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=9&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Ganesh sripathi',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '2 December 2017',
+ 'review_id': 'R2715B7EC0W548',
+ 'review_text': 'I hshs',
+ 'review_title': 'Xjxhx',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=9&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Varun Chandran',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '1 December 2017',
+ 'review_id': 'R1YH7GXH1LM0HB',
+ 'review_text': 'Phone is good except that the call failure is happening very '
+                'frequently. Maybe it is due to the ios 11 update. But it is '
+                'very irritating when the call cant get through or drops in '
+                'between a conversation',
+ 'review_title': 'Amazing',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=8&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=8&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'FITNESSINFINITY',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '17 December 2017',
+ 'review_id': 'R5QTKROPR13BW',
+ 'review_text': '\xa0i am reviewing this product on the basis of apple iphone '
+                'user\n'
+                'so that if anyone who is using apple phones can get as much\n'
+                'help as i can possibly able to provide.\n'
+                'Kindly note i am that guy who purchase things and review so\n'
+                'that it helps you, i am not such kind of people here who do '
+                'fancy reviews\n'
+                'even they dont buy, i purchased this one and pictures are '
+                'attached.\n'
+                'Why to Go for iPhone8 now ?\n'
+                '- Iphone X is Too costly\n'
+                '- Fastest Apple chip , so its better to buy iphone 8 if you '
+                'using iphone6 or 6s\n'
+                '- glass design and aluminum back, better than iphone 7 and 6 '
+                'models body.\n'
+                '- i have most of my data to icloud , like pictures etc so '
+                'iphone user will go\n'
+                'with upgraded iphone not android.\n'
+                '- lot of offers with iphone 8 which makes it accesible as X '
+                'is too costly.\n'
+                'I am attaching pictures and images for better help.\n'
+                'I write reviews for better understanding to you guys, which i '
+                'buy ,not something\n'
+                'like writing reviews for rankings here or votes, i dont find '
+                'useful to write specifications\n'
+                'after all its all about numbers and written on google , so it '
+                'doesnt make sense to\n'
+                'write numbers and specifications here which is just merely '
+                'waste of time.\n'
+                'There are more important things like how you feel the product '
+                ', how its working which\n'
+                'can only be explained if you buy and attach pictures which is '
+                'proof that you actually using\n'
+                'it.\n'
+                'Thank you for your time\n'
+                'stay fit stay strong',
+ 'review_title': 'Dont stretch your budget too much ! Best in terms of body '
+                 'design and Processor.',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=8&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Abhishek Gupta',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '16 December 2017',
+ 'review_id': 'R3OHHB5YE7LKUM',
+ 'review_text': 'Not worth buying as there are better alternatives for lesser '
+                'price.',
+ 'review_title': "Don't buy..",
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=8&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Rahul Chowdhri',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '15 December 2017',
+ 'review_id': 'R21I1HTJJ98UBT',
+ 'review_text': 'Amazing phone. Worth buying just for battery life it provides',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=8&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Zahoor',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '14 December 2017',
+ 'review_id': 'RWN82MVK0DOJT',
+ 'review_text': 'Absolutely ridiculous phone, Dont buy, Phone is single band, '
+                'i though Apple might have improve it but they dont work on '
+                'this issue. When a person goes behind walls, calls get '
+                'disconnected, regarding the basement forget about the signal. '
+                'Data channel gets lost during the phone rings, if you are '
+                'working on your laptop or anything & put phone on Hotspot '
+                'mode your work is lost, which is again a bad feature. I '
+                'connected my Moto 360 watch but it gets disconnected every 10 '
+                'minutes I need to tap my watch to connect again.  Apple says '
+                'wireless charge but you will get wired charger again a '
+                'cheating. i was using Lumai before that i never had any '
+                'issues.',
+ 'review_title': 'which is again a bad feature. I connected my Moto 360 watch '
+                 'but ...',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=8&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Dr.G.Inna Reddy',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '14 December 2017',
+ 'review_id': 'R2UCJ7PC4SG3YX',
+ 'review_text': 'good',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=8&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'miketyson',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '13 December 2017',
+ 'review_id': 'R2AQFIT68IHRS5',
+ 'review_text': 'osssum',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=8&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '11 December 2017',
+ 'review_id': 'R1EKVSZ89SIWYA',
+ 'review_text': 'Best for the people who love functionality & long term '
+                'usage.\n'
+                'Close all background apps if experience heating.',
+ 'review_title': 'No.1 in functionality',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=8&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Murtuza',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '9 December 2017',
+ 'review_id': 'R1IIA3HSYRNRNG',
+ 'review_text': 'The iPhone 8!!! This is recently been launched by the apple '
+                'store. This phone is water resistant for 30 minutes and a '
+                "depth  of 1 metre. It's display is 16:9 ratio. It has the "
+                'latest operating system ios 11. It has 2 GB ram. No '
+                'extendable memory. It has stereo speakers. It has a 12mp '
+                'camera. It has SIRI. And super fast wireless charging 50%in '
+                '30 minutes.\n'
+                'Please vote as helpful as it motivates me to write more '
+                'reviews',
+ 'review_title': 'And super fast wireless charging 50%in 30 minutes',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=8&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Pinak Bhusan Mohapatra',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '9 December 2017',
+ 'review_id': 'R1Q7SPNBANXFV7',
+ 'review_text': 'Same old iphone with no new features. 720p screen, ios 11 '
+                'bugs. this phone is not worth 64000 at all. disgusting apple. '
+                'phone is only for show off!!',
+ 'review_title': 'disgusting apple. phone is only for show off',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=8&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Srishty goel',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '8 December 2017',
+ 'review_id': 'R31LD6ZBIFC3CR',
+ 'review_text': 'On purchase it was told that 10% cashback will be received on '
+                'HDFC cards. More than 2 months have elapsed, I haven’t '
+                'received the cashback and the executives aren’t even '
+                'assisting.',
+ 'review_title': 'No cashback till date',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=7&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=7&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Mohammad Tariq',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '29 December 2017',
+ 'review_id': 'RV6SZJA80XZEN',
+ 'review_text': 'It’s a great mobile. Can I get invoice to my e-mail I’d.',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=7&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Rajnish Sharma',
+ 'comments_count': '2',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '29 December 2017',
+ 'review_id': 'R2107SN4H8TE4R',
+ 'review_text': 'The phone has turned out to be a dud! My iPhone 8 is '
+                'rebooting continuously and Amazon support asks you to contact '
+                'manufacturer, who will send it to the repair facility in '
+                "Bangalore. It's a whole new process that will take 7-10 days. "
+                'My advise, never buy a phone online, always buy such phones '
+                'from authorised stores.',
+ 'review_title': 'Completely Avoidable Buying Experience',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=7&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Anilkumar Mannambeth Karikkan',
+ 'comments_count': '3',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '28 December 2017',
+ 'review_id': 'R21UDWHC31HKIH',
+ 'review_text': 'I have ordered an I phone 8. But the earpods are missing. It '
+                'is absolutely deplorable from a firm like yours. We expect '
+                'you to find a remedy as quickly as possible.',
+ 'review_title': 'Missing earpods from the I phone box - Highly deplorable',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=7&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Mihir',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '27 December 2017',
+ 'review_id': 'RK4CF0VAD5OK8',
+ 'review_text': 'Outdated and experience.Not worth buying.',
+ 'review_title': 'Two Stars',
+ 'source_id': 1,
+ 'stars': '2'}
+2018-02-18 23:23:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=7&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Parv Khattar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '26 December 2017',
+ 'review_id': 'R1RIKTM5VI9MH5',
+ 'review_text': 'Best product',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=7&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Aniket',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '25 December 2017',
+ 'review_id': 'R2JQPIGHCE3RX5',
+ 'review_text': "I am providing my views to the customers that don't get "
+                'confused or disappoint  by the review of many other people in '
+                'this item, that iphone should be known as iphone 7s because '
+                'apple has launched the iphone 8 with some improved hardware '
+                'and software.\n'
+                'The iphone 8 now comes with glass back and not with aluminium '
+                'back like in iphone 7 so it makes a major difference between '
+                'iphone 7 and 8.\n'
+                'No doubt ,that there is also many improventments in '
+                'software.\n'
+                'So dont get confused and if you like this iphone then go with '
+                'it.\n'
+                'If you find my viw helpful then press the helpful button '
+                'below to support me.',
+ 'review_title': 'Why iphone 8 is not iphone 7s ?',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=7&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Abdul jaleel',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '22 December 2017',
+ 'review_id': 'R3H0JGQLMPFAZB',
+ 'review_text': "Super and awesome phone. don't read useless reviews and close "
+                'your eyes then buy it.',
+ 'review_title': 'Great phone!',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=7&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Yashvant',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '22 December 2017',
+ 'review_id': 'R2FCYUFWCX7DQX',
+ 'review_text': 'Greatest',
+ 'review_title': 'Greater than good',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=7&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Prashanth MS',
+ 'comments_count': '2',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '20 December 2017',
+ 'review_id': 'R3R8XLND6G5FZD',
+ 'review_text': 'iPhone 8 is the Best and the BEAST among all its rivals with '
+                'a stunning Display and battery life.\n'
+                'Having A11 Bionic chip into it’s heart, the phone is blazing '
+                'fast and buttery. And let me tell you- I’m coming from 6S.. '
+                'and the iPhone 8 is way better in terms of battery life and '
+                'overall performance. It’s defin worth the upgrade if you are '
+                'from 6S or earlier.\n'
+                'Why you need to consider an iPhone 8 among others?  There you '
+                'go..\n'
+                '1. A11 Bionic Chip - (gone mad with numbers.)\n'
+                '2. Great battery life. twice of 6S’s nearly.\n'
+                '3. 2018-lined Flagship.\n'
+                '4. Assurance for 3+ years.\n'
+                '5. The best Camera on the Planet\n'
+                '6. Supports wireless charging. (Right now May not be useful '
+                'to many , but definitely in the forthcoming)\n'
+                '7. Bluetooth 5.0 - A great fun with AirPods',
+ 'review_title': 'Gift yourself an iPhone 8 this fall.',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=7&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Vinay',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '18 December 2017',
+ 'review_id': 'R1IWTRLYQNQ2X3',
+ 'review_text': 'horrible experience, product delivered faulty and when we '
+                'called up immediately to inform them ,, they said please '
+                'visit an apple store',
+ 'review_title': 'Pathetic service, making fool of customers',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=6&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=6&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'DAVINDER G.',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '8 January 2018',
+ 'review_id': 'R1BGL7FGSG5Y9H',
+ 'review_text': 'Love it!!',
+ 'review_title': '❤️❤️',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=6&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'ashim sarkar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '6 January 2018',
+ 'review_id': 'R2BTH8UKXR4P6U',
+ 'review_text': 'Defective item delivered',
+ 'review_title': 'One Star',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=6&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Arun Appu',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '5 January 2018',
+ 'review_id': 'R1EH73A7UUN19M',
+ 'review_text': 'Surprised with the ontime delivery. Took decision to buy and '
+                'ordered in Amazon at 10pm and delivered at doorstep next day '
+                'at 10.30 am precise. Awesome...congratulations to amazon '
+                'delivery team for an excellent supply management.\n'
+                'iPhone is also very good and no probs till now.',
+ 'review_title': 'Awesome..',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=6&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '4 January 2018',
+ 'review_id': 'R1T94V2NMDFM5Y',
+ 'review_text': 'Super third class battery life. The battery lasts only 4-5 '
+                'hours. Repenting buying the phone',
+ 'review_title': 'Three Stars',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=6&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Rajeev Rai',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '3 January 2018',
+ 'review_id': 'R2FDF8Y37KPBAK',
+ 'review_text': 'Truly a gr8 smartphone',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=6&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'sophy Fernandes',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '2 January 2018',
+ 'review_id': 'R17UJB7G9S9RLL',
+ 'review_text': 'I got gift of this product and its really awesome and '
+                'amazing.. Thanks i loved it. Will shop more... Thank you '
+                'Amazon for such amazing product',
+ 'review_title': 'I got gift of this product and its really awesome and '
+                 'amazing',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=6&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Arif khatri',
+ 'comments_count': '2',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '2 January 2018',
+ 'review_id': 'R2JFSSG0ZIS6X6',
+ 'review_text': "It's a defective product .\n"
+                'Please exchange it or refund my amount.',
+ 'review_title': "It's a defective product. Please exchange it or refund ...",
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=6&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Mayank Pahuja',
+ 'comments_count': '6',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '1 January 2018',
+ 'review_id': 'RTCSCQ45DXWXD',
+ 'review_text': 'Got my phone delivered last week, and I am impressed. Below '
+                'are my thoughts about this product. Views are strictly '
+                'personal and mean no harm to users of other phones.\n'
+                'A lot of people are in a dilemma whether this phone is any '
+                'improvement over iPhone 7? My verdict: Absolutely YES. First '
+                'its a newer generation phone with a more powerful chipset '
+                'underneath. The difference in price between iPhone 7, 32GB '
+                'and iPhone 8, 64 GB model is hardly 11k. So you get:\n'
+                '- a faster processor(by upto 70%),\n'
+                '- Better CAMERA(Best camera at launch, improved lowlight '
+                'images, much better image processing),\n'
+                '- WIRELESS CHARGING\n'
+                '- 2x memory.\n'
+                '- Louder and better quality speaker\n'
+                '- True tone brightness (helps to protect your eyes, is '
+                'different from night mode)\n'
+                '- Moreover since its a newer model, apple will provide the '
+                'support for this device for 1 year more than iPhone 7.\n'
+                'All this for just 11k more. And since its upto 70% faster '
+                'than iPhone 7, it will show much better performance in later '
+                'years as compared to iPhone 7. If you plan to keep your phone '
+                'beyond 2 years then 8 should be your pick. It can easily '
+                'serve you well for 4 years, and will be on the latest '
+                "software for at-least 5 years(which is 2022, going by apple's "
+                'support cycle for current phones, example: iphone 5s was '
+                'launched in 2013 and still gets the latest iOS 11).\n'
+                'iPhone 8 vs iPhone X?\n'
+                'iPhone X is a rockstar, Show stopper. It has got a better '
+                'camera and all but its still costs a whopping 33k more!! All '
+                'you missout in iPhone 8 compared to iPhone X is:\n'
+                '- Dual lens camera (8 plus has it)\n'
+                '- Face detection (much talked about, though some people '
+                'prefer the touch id)\n'
+                '- Bezel less display (Showoff stuff IMO)\n'
+                '- THATS ALL!!\n'
+                'Plus points\n'
+                '- iPhone 8 has the exact same chipset under its skin.\n'
+                '- Has wireless charging same as iPhone X!\n'
+                '- Retains the old tried, tested and loved touch id.\n'
+                '- Has the same no-nonsense and durable iPhone design that '
+                'people have trusted for years!!\n'
+                'I think that I have emphasized enough on why iPhone 8 is the '
+                'phone to buy and would not let you down.',
+ 'review_title': "Why iPhone 8 over iPhone 7 and even iPhone X? Here's why",
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=6&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Dr.Brahmjeet Atrish',
+ 'comments_count': '2',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '31 December 2017',
+ 'review_id': 'R1740L21XOS5LA',
+ 'review_text': 'In price of 54k one can go for one plus 5t more features than '
+                'any iphone and its cheap also\n'
+                'Iphone has became just a status symbol and nothing else I '
+                'have moved from iPhone 6 to Android',
+ 'review_title': 'In price of 54k one can go for one plus ...',
+ 'source_id': 1,
+ 'stars': '2'}
+2018-02-18 23:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=6&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '30 December 2017',
+ 'review_id': 'R2H4ANSHVOUNTN',
+ 'review_text': 'I have an Instagram page and a YouTube channel too. I would '
+                'like to review your product.\n'
+                'Email- anengineerkalpesh@gmail.com',
+ 'review_title': 'I would like to review your product',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=5&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=5&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'ajoy sen sarma',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '20 January 2018',
+ 'review_id': 'R2OOYQ35DM5C5U',
+ 'review_text': 'Iphone 8 ?Computable with 4g volte',
+ 'review_title': 'Three Stars',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=5&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Bappa',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '18 January 2018',
+ 'review_id': 'RO62H9DNBE2Q5',
+ 'review_text': 'Best in class at this price range!!',
+ 'review_title': '4 years of making this designe is best',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=5&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'vipin parmar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '16 January 2018',
+ 'review_id': 'R1TUSZ98FFIIRN',
+ 'review_text': 'The Good :_- The iPhone 8 offers wireless charging, '
+                'lightning-fast performance and small but solid upgrades to '
+                'its camera, screen and speakers. Its starting storage size is '
+                'a roomy 64GB, double that of the iPhone 7.\n'
+                'The Bad :- This phone has the same pedestrian design, missing '
+                'headphone jack and battery life as the iPhone 7 -- and no '
+                'dual camera either. The iPhone 8 costs a bit more than '
+                'baseline new iPhones in years past, and comes only in black, '
+                'silver and a new shade of gold.\n'
+                'The Bottom Line The iPhone 8 has plenty of power under the '
+                'hood, but lacks the extra camera features and design upgrade '
+                'of the better iPhone 8 Plus and X.',
+ 'review_title': 'i like it',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=5&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Debottam Banerjee',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '15 January 2018',
+ 'review_id': 'R1BN49HE1GFDAW',
+ 'review_text': 'Phone has issues in fingerprint authorisation. Apps not '
+                'getting downloaded by putting fingerprint authorisation. '
+                'Getting overheated for no reason or rhyme. Absolute '
+                'disappointment.',
+ 'review_title': 'Absolute Disappointment!',
+ 'source_id': 1,
+ 'stars': '2'}
+2018-02-18 23:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=5&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Avi Puri',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '14 January 2018',
+ 'review_id': 'R23996ZDMFETV2',
+ 'review_text': 'Its an awesome phone',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=5&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '1',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '14 January 2018',
+ 'review_id': 'R18KICDIWVTBAO',
+ 'review_text': '2 gb ram in 54000??:D what a joke!!!',
+ 'review_title': 'Three Stars',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=5&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '13 January 2018',
+ 'review_id': 'R1CXXO8KZNHBY9',
+ 'review_text': 'It is as simple as iPhone-6. No new features are added.',
+ 'review_title': 'One Star',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=5&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '13 January 2018',
+ 'review_id': 'R3TY235NI8Y5T4',
+ 'review_text': 'If anyone want to purchase a new iPhone get it from apple '
+                'store ,as apple exports its products only to its authorised '
+                'apple stores in the county and at the price mentioned in its '
+                'site , so other stores which provide apple iphones at still '
+                'lower price are refurbished with duplicated serial no and '
+                'warranties and this is from my real experience with 6s and it '
+                'will never cause problem for 1 year for sure',
+ 'review_title': 'If anyone want to purchase a new iPhone get it ...',
+ 'source_id': 1,
+ 'stars': '2'}
+2018-02-18 23:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=5&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Jayendrasin',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '9 January 2018',
+ 'review_id': 'R4OFBO6SVW3LQ',
+ 'review_text': 'Totallyfaltu phone hai mat kharido',
+ 'review_title': 'One Star',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=5&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Sandeep Kulkarni',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '8 January 2018',
+ 'review_id': 'R3KSDHHLX06EK4',
+ 'review_text': 'Very nice Apple product, phone is excellent and handy. As '
+                'expected th quality of the product is very good and '
+                'exceptional. Strongly recommend for first time Apple users. '
+                'nice delivery from Amazon and Apario',
+ 'review_title': 'Very nice Apple product',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=4&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=4&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Soham agarwal',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '25 January 2018',
+ 'review_id': 'R2EFV61XR4FHXF',
+ 'review_text': 'After killing Jack these guys had less to live for.\n'
+                'The fingerprint sensor starts to wear off for some reason and '
+                'the bevel becomes easily scratch worthy\n'
+                'Compared to the iPhone X I would consider this a foolhardy '
+                'move by Apple to release this at the same time as the iPhone '
+                'X',
+ 'review_title': 'Not worth it',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=4&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Pradeep Thyagaraj',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '25 January 2018',
+ 'review_id': 'R7N6XRIO9HRNA',
+ 'review_text': "It's Apple, of-course it is good. Battery is still not the "
+                'level I expected. With iWatch pairing, I need to charge '
+                'everyday.',
+ 'review_title': 'Good',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=4&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Raghava',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '24 January 2018',
+ 'review_id': 'RCK5ZA898TKEE',
+ 'review_text': 'god',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=4&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'anusree',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '24 January 2018',
+ 'review_id': 'R2V2A9ELLAEJXV',
+ 'review_text': '',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=4&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '24 January 2018',
+ 'review_id': 'R2QHLLJ3U0742S',
+ 'review_text': 'Good phone',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=4&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'siddhartha rana',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '23 January 2018',
+ 'review_id': 'R38FL05HH5Q4G9',
+ 'review_text': 'Product says comes with the earpods , but i got the regular '
+                'one moreover the voice of the phone is really slow , not even '
+                'audible, not really happy.',
+ 'review_title': 'Earpods were replaced with the regular headphones.',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=4&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Rrizwan khhan',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '22 January 2018',
+ 'review_id': 'R1JY0H9810M8LM',
+ 'review_text': 'Is I phone 8 is batter than I phone 7 if? Yes soo y???',
+ 'review_title': 'Is I phone8 is batter than I phone 7 if?yes soo y???',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=4&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'sumit walekar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '21 January 2018',
+ 'review_id': 'R22CO9P6YKV2E',
+ 'review_text': 'no words to say its a really awesome features phone display '
+                'resolutation is really so good battery back up so good '
+                'processor and touch is really superb i am loving it recharges '
+                'so fast thanks to apple',
+ 'review_title': 'no words to say its a really awesome features phone display '
+                 'resolutation is really so good battery ...',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=4&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'ANIL KUMAR SINGH',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '21 January 2018',
+ 'review_id': 'R3J2J08EAM1G17',
+ 'review_text': 'Amazing phone the glass back is looks and feels great.Not '
+                'much different from the 7 though feels like a iPhone 7 s',
+ 'review_title': 'Amazing phone the glass back is looks and feels great',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=4&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Ankit Das',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '21 January 2018',
+ 'review_id': 'R1CH9HOSZB7KJK',
+ 'review_text': 'Delivered in one day with prime. Awesome phone. Got at an '
+                'amazing price...Great overall experience...',
+ 'review_title': 'Outstanding phone. Great Seller',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=3&reviewerType=all_reviews&sortBy=recent> (referer: https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1)
+2018-02-18 23:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=3&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Manesh',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '31 January 2018',
+ 'review_id': 'R19CLXTOO1YGM2',
+ 'review_text': 'Iphone 8 speed is good as compared to the earlier versions. '
+                'Nice glass finish body makes it more attractive. Additional '
+                'security features makes it a WOW product.',
+ 'review_title': 'Iphone 8 speed is good as compared to the earlier versions',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=3&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Rathina Kumar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '30 January 2018',
+ 'review_id': 'R1VUA6ZLPX2UNR',
+ 'review_text': 'test',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=3&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '29 January 2018',
+ 'review_id': 'RB0MPXH9GS9J3',
+ 'review_text': 'Its a great feeling experiencing the Apple Iphone 8 design.',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=3&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '29 January 2018',
+ 'review_id': 'R3PFDFU7QFZOR6',
+ 'review_text': 'Worth buying...Simply Awsome!!!!!',
+ 'review_title': 'Worth buying... Simply Awsome!!! ...',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=3&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Gaurav Upreti',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '28 January 2018',
+ 'review_id': 'R1GVRK573VDLTB',
+ 'review_text': 'Nice device, not much changed in it with respect to iPhone 7.',
+ 'review_title': 'Four Stars',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=3&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Simar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '28 January 2018',
+ 'review_id': 'RH7RBXPSWV99V',
+ 'review_text': 'Excellent phone with fastest processor and exceptionally '
+                'great camera. Battery life is improved',
+ 'review_title': 'Excellent phone',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=3&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Abhinay Nilawar ',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '28 January 2018',
+ 'review_id': 'R8VOS895ND70N',
+ 'review_text': 'Great phone. I used iphone 6 for three years. From 6 to 8 '
+                "it's a major update for me. Loving it.\n"
+                'A11 bionic fastest cheap I ever experienced.\n'
+                'New AR thec awesome experience at start.',
+ 'review_title': 'A11 bionic. Awesome cheap',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=3&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Rohit Kumar',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '27 January 2018',
+ 'review_id': 'R32LSMFIJMUI1Y',
+ 'review_text': 'Got defected iphone and its not even return easily..',
+ 'review_title': 'Defected phone',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=3&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Sanju Choudhary',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '26 January 2018',
+ 'review_id': 'R2NH4UJN1P5C6S',
+ 'review_text': 'I have got this in 47990 .... Loved this .... Unbelievable '
+                'deal and a great phone....',
+ 'review_title': 'Beast',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/Apple-iPhone-Space-Grey-64GB/product-reviews/B0719KYGMQ?pageNumber=3&reviewerType=all_reviews&sortBy=recent>
+{'author_name': 'Joel',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '25 January 2018',
+ 'review_id': 'R3E11QQN6Z8RUY',
+ 'review_text': 'I thought there was supposed to be the wireless charger for '
+                'iphone 8 but it is missing in my pack',
+ 'review_title': 'I thought there was supposed to be the wireless charger ...',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:23:57 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-02-18 23:23:57 [scrapy.extensions.feedexport] INFO: Stored json feed (145 items) in: iphone_8_reviews.json
+2018-02-18 23:23:57 [fetch_reviews] INFO: Closing Spider and starting insert product with review_count in crawler table
+2018-02-18 23:23:57 [fetch_reviews] INFO: B0719KYGMQ entry done successfully
+2018-02-18 23:23:57 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 8042,
+ 'downloader/request_count': 19,
+ 'downloader/request_method_count/GET': 19,
+ 'downloader/response_bytes': 870888,
+ 'downloader/response_count': 19,
+ 'downloader/response_status_count/200': 17,
+ 'downloader/response_status_count/301': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 2, 18, 17, 53, 57, 767578),
+ 'item_scraped_count': 145,
+ 'log_count/DEBUG': 165,
+ 'log_count/INFO': 43,
+ 'request_depth_max': 2,
+ 'response_received_count': 17,
+ 'scheduler/dequeued': 17,
+ 'scheduler/dequeued/memory': 17,
+ 'scheduler/enqueued': 17,
+ 'scheduler/enqueued/memory': 17,
+ 'start_time': datetime.datetime(2018, 2, 18, 17, 53, 1, 358108)}
+2018-02-18 23:23:57 [scrapy.core.engine] INFO: Spider closed (finished)

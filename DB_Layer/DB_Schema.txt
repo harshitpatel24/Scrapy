@@ -1,0 +1,25 @@
+DB SCHEMA
+
+==> create database crawl;
+
+==> Table:source
+create table source(
+source_id SERIAL PRIMARY KEY,source_name VARCHAR(100)
+);
+
+==> Table: product_details
+create table product_details(
+	id SERIAL,source_id int4 REFERENCES source(source_id),
+	product_id VARCHAR(25) UNIQUE NOT NULL,
+	product_name VARCHAR(200) NOT NULL,
+	product_url VARCHAR(500) NOT NULL,
+	PRIMARY KEY(id,product_id)
+);
+
+==> Table: crawler
+create table crawler(
+	id SERIAL PRIMARY KEY,
+	source_id int4 REFERENCES source(source_id),
+	product_id VARCHAR(25) REFERENCES product_details(product_id),
+	review_count int8,date VARCHAR(15),time VARCHAR(15)
+);

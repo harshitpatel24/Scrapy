@@ -1,0 +1,211 @@
+2018-02-18 23:25:48 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: azcrawl)
+2018-02-18 23:25:48 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.3.1, w3lib 1.18.0, Twisted 17.9.0, Python 3.6.3 |Anaconda, Inc.| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.2.0 (OpenSSL 1.0.2l  25 May 2017), cryptography 2.0.3, Platform Windows-8.1-6.3.9600-SP0
+2018-02-18 23:25:48 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'AUTOTHROTTLE_MAX_DELAY': 600, 'BOT_NAME': 'azcrawl', 'CONCURRENT_REQUESTS': 1, 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'CONCURRENT_REQUESTS_PER_IP': 1, 'DOWNLOAD_DELAY': 2, 'FEED_FORMAT': 'json', 'FEED_URI': 'iphone_8_cursor.json', 'LOG_FILE': 'Logs/log_file18_02_2018_23_25_47.log', 'LOG_STDOUT': True, 'NEWSPIDER_MODULE': 'azcrawl.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['azcrawl.spiders']}
+2018-02-18 23:25:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-02-18 23:25:48 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'azcrawl.middlewares.AzcrawlDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-02-18 23:25:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'azcrawl.middlewares.AzcrawlSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-02-18 23:25:48 [scrapy.middleware] INFO: Enabled item pipelines:
+['azcrawl.pipelines.AzcrawlPipeline']
+2018-02-18 23:25:48 [scrapy.core.engine] INFO: Spider opened
+2018-02-18 23:25:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-02-18 23:25:48 [az_cursor] INFO: Spider opened: az_cursor
+2018-02-18 23:25:48 [az_cursor] INFO: Spider opened: az_cursor
+2018-02-18 23:25:48 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-02-18 23:25:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://amazon.in/robots.txt> from <GET http://amazon.in/robots.txt>
+2018-02-18 23:25:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.in/robots.txt> from <GET https://amazon.in/robots.txt>
+2018-02-18 23:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/robots.txt> (referer: None)
+2018-02-18 23:26:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://amazon.in/> from <GET http://amazon.in/>
+2018-02-18 23:26:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.in/> from <GET https://amazon.in/>
+2018-02-18 23:26:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/robots.txt> (referer: None)
+2018-02-18 23:26:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/> (referer: None)
+2018-02-18 23:26:12 [az_cursor] INFO: Start Crawling Only for New (Delta) Reviews for given product_id in the program
+2018-02-18 23:26:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1> (referer: https://www.amazon.in/)
+2018-02-18 23:26:13 [az_cursor] INFO: Checking If new reviews are available or not
+2018-02-18 23:26:13 [az_cursor] INFO: New Reviews are available for B0719KYGMQ
+2018-02-18 23:26:13 [az_cursor] INFO: Start Crawling for New Reviews availabe forB0719KYGMQ
+2018-02-18 23:26:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Nandakishor.U.M',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '17 February 2018',
+ 'review_id': 'RHSE8VVTUPD4W',
+ 'review_text': 'In top 3 most powerful phones till now, one of them is iPhone '
+                '8.\n'
+                'The battery seems fair with more than a day back-up..the '
+                'phone’s design is seeking some doubt on build-quality because '
+                'of its fine glass finishing. But if you have a good back '
+                'cover, No worries....\n'
+                'Camera(i have compared the quality with several dual cam '
+                'phones),dispaly and memory management is at its best for my '
+                'usage. Audio also looks good.\n'
+                'Since i have no wireless charger,no comments on that.\n'
+                'And you know, the phone’s cost, only if you are confident to '
+                'buy, go for it. Won’t dissatisfy you.\n'
+                'Loved the phone not by the brand, but by what it has...',
+ 'review_title': 'My opinion on a 50-60k handset, with a brand name-Apple',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:26:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'shanmugavel v pillai',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '17 February 2018',
+ 'review_id': 'R3V6YAY35VYSX4',
+ 'review_text': 'Hello,\n'
+                '  I getted to know about this phone that its features and '
+                'software is incredible. So I am writing this that I want a '
+                'free sample of this product to get to know about it and to '
+                'review it ..',
+ 'review_title': 'Provide with a sample for free',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:26:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Mohit Singh',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '16 February 2018',
+ 'review_id': 'R1ZU70I1KLI2LN',
+ 'review_text': 'Good device but I expected something more',
+ 'review_title': 'Four Stars',
+ 'source_id': 1,
+ 'stars': '4'}
+2018-02-18 23:26:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Devyani T.',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '15 February 2018',
+ 'review_id': 'R19EQP5UI5AH27',
+ 'review_text': '❤️❤️❤️❤️❤️',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:26:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Amazon Customer',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '14 February 2018',
+ 'review_id': 'R367MCX975SK6K',
+ 'review_text': '2 GB RAM !!!',
+ 'review_title': 'Worth less',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:26:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'mmmm',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '14 February 2018',
+ 'review_id': 'R1GT92IBYOABRK',
+ 'review_text': 'Waste of money',
+ 'review_title': 'Waste of money instead of this one should buy Google pixel 2 '
+                 'xl',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:26:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'M.S',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '10 February 2018',
+ 'review_id': 'R2VZVZYL6W85WX',
+ 'review_text': 'Nice product from Apple. Gud to buy this amazing device '
+                'especially if you are going from android to ios. Amazing '
+                'experience and i was little worried that is it safe to buy '
+                'from e commerce like amazon but i was wrong e commerce give '
+                'best deals. Go for it without a single doubt.',
+ 'review_title': 'Go for it 👍🏻',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:26:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Prasad dusane',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '9 February 2018',
+ 'review_id': 'R3KOTMH1E05IC1',
+ 'review_text': 'This I phone is best I phone & Amazon service is a great.. I '
+                'phone 8 best ,like,great....',
+ 'review_title': 'Five Stars',
+ 'source_id': 1,
+ 'stars': '5'}
+2018-02-18 23:26:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'Naveen',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '9 February 2018',
+ 'review_id': 'R385ULXET42DEP',
+ 'review_text': 'I am facing network problem with my instrument. Tried '
+                'changing the handset with idea SIM works fine but when the '
+                'same SIM is inserted in iPhone 8 the network signal decreases '
+                'and calls are disconnected.',
+ 'review_title': 'Network issue',
+ 'source_id': 1,
+ 'stars': '3'}
+2018-02-18 23:26:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/product-reviews/B0719KYGMQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&showViewpoints=1&reviewerType=all_reviews&sortBy=recent&pageNumber=1>
+{'author_name': 'priyanka',
+ 'comments_count': '0',
+ 'product_id': 'B0719KYGMQ',
+ 'product_name': 'Apple iPhone 8',
+ 'review_date': '8 February 2018',
+ 'review_id': 'R8M8T6MW1PFST',
+ 'review_text': 'EarPods with lightning connector and lightning to headphone '
+                'jack adapter are missing in the box',
+ 'review_title': 'Do not buy - Missing accessories',
+ 'source_id': 1,
+ 'stars': '1'}
+2018-02-18 23:26:14 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-02-18 23:26:14 [scrapy.extensions.feedexport] INFO: Stored json feed (10 items) in: iphone_8_cursor.json
+2018-02-18 23:26:14 [az_cursor] INFO: Spider Closed
+2018-02-18 23:26:14 [az_cursor] INFO: Starting Update review_count in DB
+2018-02-18 23:26:14 [az_cursor] INFO: Successfully Updated review_count for B0719KYGMQ
+2018-02-18 23:26:14 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1886,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 137921,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 4,
+ 'downloader/response_status_count/301': 4,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 2, 18, 17, 56, 14, 169639),
+ 'item_scraped_count': 10,
+ 'log_count/DEBUG': 19,
+ 'log_count/INFO': 17,
+ 'request_depth_max': 1,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2018, 2, 18, 17, 55, 48, 307376)}
+2018-02-18 23:26:14 [scrapy.core.engine] INFO: Spider closed (finished)
